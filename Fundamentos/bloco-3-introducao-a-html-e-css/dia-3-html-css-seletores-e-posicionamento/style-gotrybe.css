@@ -1,0 +1,65 @@
+.phrases-list {
+    background-color: yellow;
+}
+
+.phrases-list .even {
+    color: green;
+}
+
+.phrases-list .odd {
+    text-transform: uppercase;
+}
+
+.headers {
+    color: red;
+}
+
+.headers em {
+    font-size: 40px;
+    border: solid 1px black;
+}
+
+ul li, ol li {
+    font-size: 20px;
+}
+
+li em, li em {
+    font-weight: bold;
+}
+
+#languages li:nth-child(-n+3) {
+    color: blue;
+}
+
+.pink-bg {
+    background-color: pink;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#ally a:hover {
+    font-weight: bold;
+}
+
+#ally li:nth-child(1):hover > a {
+    color: orange;
+}
+
+#ally li:nth-of-type(2):hover > a {
+    color: green;
+}
+
+#ally li:nth-of-type(3):hover > a {
+    color: black;
+}
+
+#ally li:nth-of-type(4):hover > a {
+    color: yellow;
+}
+
+#ally li:nth-of-type(5):hover > a {
+    color: green;
+}
