@@ -60,3 +60,20 @@ if (numero > 0){
     console.log("Número negativo");
 }
 
+// Exercício 05
+
+const angulo1 = 60;
+const angulo2 = -5;
+const angulo3 = 70;
+let resultado = null;
+
+if (angulo1 < 0 || angulo2 < 0 || angulo3 < 0) {
+    console.log("Angulo inválido");
+} else if (angulo1 + angulo2 + angulo3 === 180){
+    resultado = true;
+    console.log(resultado);
+} else if (angulo1 + angulo2 + angulo3 != 180) {
+    resultado = false;
+    console.log(resultado)
+}
+
