@@ -48,3 +48,15 @@ if (v1 > v2 && v1 > v3) {
     console.log(v3 + " é o maior valor");
 }
 
+// Exercício 04
+
+const numero = -8;
+
+if (numero > 0){
+    console.log("Número positivo");
+} else if (numero === 0) {
+    console.log("Número zero");
+} else {
+    console.log("Número negativo");
+}
+
