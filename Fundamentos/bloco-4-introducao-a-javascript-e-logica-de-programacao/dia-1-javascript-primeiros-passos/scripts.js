@@ -144,7 +144,19 @@ const num1 = 11;
 const num2 = 7;
 const num3 = 91;
 
-if (num1 % 2 === 0 || num2 % 2 ===0 || num3 % 2 === 0) {
+if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
+    console.log(true);
+} else {
+    console.log(false);
+}
+
+// Exercício 09
+
+const num1 = 77;
+const num2 = 5;
+const num3 = 2;
+
+if (num1 % 2 === 1 || num2 % 2 === 1 || num3 % 2 === 1) {
     console.log(true);
 } else {
     console.log(false);
