@@ -112,3 +112,29 @@ switch (chess.toLowerCase()) {
 
 // Referência do exercício 06 - https://www.soxadrez.com.br/conteudos/movimentos/
 
+// Exercicios 07
+
+let nota = 93;
+
+if (nota >= 90 && nota <= 100) {
+    nota = "A";
+    console.log("Nota: " + nota);
+} else if (nota >= 80 && nota <= 89) {
+    nota = "B";
+    console.log("Nota: " + nota);
+} else if (nota >= 70 && nota <= 79) {
+    nota = "C";
+    console.log("Nota: " + nota);
+} else if (nota >= 60 && nota <= 69) {
+    nota = "D";
+    console.log("Nota: " + nota);
+} else if (nota >= 50 && nota <= 59) {
+    nota = "E";
+    console.log("Nota: " + nota);
+} else if (nota < 50) {
+    nota = "F";
+    console.log("Nota: " + nota);
+} else {
+    console.log("Nota inválida");
+}
+
