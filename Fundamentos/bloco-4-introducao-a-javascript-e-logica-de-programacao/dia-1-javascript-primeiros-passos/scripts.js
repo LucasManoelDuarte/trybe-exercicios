@@ -77,3 +77,38 @@ if (angulo1 < 0 || angulo2 < 0 || angulo3 < 0) {
     console.log(resultado)
 }
 
+// Exercício 06
+
+const chess = "Cavalo";
+
+switch (chess.toLowerCase()) {
+    case "rei":
+        console.log("Pode mover-se em qualquer direção, porém apenas uma casa por vez.");
+        break;
+
+    case "rainha":
+        console.log("pode mover-se em qualquer direção (vertical, horizontal e diagonal), porém quantas casas quiser");
+        break;
+
+    case "torre":
+        console.log("Move-se em linha reta, tanto na vertical quanto na horizontal, quantas casas quiser.");
+        break;
+
+    case "bispo":
+        console.log("Move-se na diagonal, quantas casas quiser.");
+        break;
+
+    case "cavalo":
+        console.log("O movimento executado pelo Cavalo é conhecido por “um-dois” ou “em L”.");
+        break;
+
+    case "peao":
+        console.log("Move-se sempre uma casa para frente.");
+        break;
+
+    default:
+        console.log("Peça inválida");
+}
+
+// Referência do exercício 06 - https://www.soxadrez.com.br/conteudos/movimentos/
+
