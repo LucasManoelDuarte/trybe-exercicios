@@ -34,3 +34,17 @@ if (valor1 > valor2) {
     console.log("Os valores são iguais");
 }
 
+// Exercício 03
+
+const v1 = 20;
+const v2 = 21;
+const v3 = 35;
+
+if (v1 > v2 && v1 > v3) {
+    console.log(v1 + " é o maior valor");
+} else if (v2 > v1 && v2 > v3){
+    console.log(v2 + " é o maior valor");
+} else {
+    console.log(v3 + " é o maior valor");
+}
+
