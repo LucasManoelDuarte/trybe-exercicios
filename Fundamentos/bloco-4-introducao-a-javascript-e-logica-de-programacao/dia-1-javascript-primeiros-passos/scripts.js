@@ -1,4 +1,4 @@
-// Exercício 01
+// Exercício 01:
 
 const num1 = 32;
 const num2 = 2;
@@ -18,7 +18,7 @@ console.log(divide);
 let modulo = num1 % num2 === 0;
 console.log(modulo);
 
-// Exercício 02
+// Exercício 02:
 
 const valor1 = 10;
 const valor2 = 8;
@@ -34,7 +34,7 @@ if (valor1 > valor2) {
     console.log("Os valores são iguais");
 }
 
-// Exercício 03
+// Exercício 03:
 
 const v1 = 20;
 const v2 = 21;
@@ -48,7 +48,7 @@ if (v1 > v2 && v1 > v3) {
     console.log(v3 + " é o maior valor");
 }
 
-// Exercício 04
+// Exercício 04:
 
 const numero = -8;
 
@@ -60,7 +60,7 @@ if (numero > 0){
     console.log("Número negativo");
 }
 
-// Exercício 05
+// Exercício 05:
 
 const angulo1 = 60;
 const angulo2 = -5;
@@ -77,7 +77,7 @@ if (angulo1 < 0 || angulo2 < 0 || angulo3 < 0) {
     console.log(resultado)
 }
 
-// Exercício 06
+// Exercício 06:
 
 const chess = "Cavalo";
 
@@ -112,7 +112,7 @@ switch (chess.toLowerCase()) {
 
 // Referência do exercício 06 - https://www.soxadrez.com.br/conteudos/movimentos/
 
-// Exercicios 07
+// Exercicios 07:
 
 let nota = 93;
 
@@ -138,7 +138,7 @@ if (nota >= 90 && nota <= 100) {
     console.log("Nota inválida");
 }
 
-// Exercício 08
+// Exercício 08:
 
 const num1 = 11;
 const num2 = 7;
@@ -150,7 +150,7 @@ if (num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0) {
     console.log(false);
 }
 
-// Exercício 09
+// Exercício 09:
 
 const num1 = 77;
 const num2 = 5;
@@ -160,5 +160,24 @@ if (num1 % 2 === 1 || num2 % 2 === 1 || num3 % 2 === 1) {
     console.log(true);
 } else {
     console.log(false);
+}
+
+// Exercício 10:
+
+const custo = 100;
+const valorVenda = 150;
+imposto = custo * (20 / 100);
+
+console.log(imposto);
+
+if (custo === 0 || valorVenda === 0) {
+    console.log("Valores inválidos");
+} else {
+    let custoTotal = custo + imposto;
+    let lucro = valorVenda - custoTotal;
+    let lucroMil = lucro * 1000;
+
+    console.log(lucro);
+    console.log(lucroMil);
 }
 
