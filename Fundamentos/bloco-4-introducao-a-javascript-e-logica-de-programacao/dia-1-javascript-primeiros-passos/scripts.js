@@ -181,3 +181,57 @@ if (custo === 0 || valorVenda === 0) {
     console.log(lucroMil);
 }
 
+// exercicio 11
+
+let salarioBruto = 3000.00;
+let inssAliquota = 0;
+let impostoRendaAliquota = 0;
+let parcela = 0;
+let salarioBrutoJaReduzidoInss = 0;
+let salarioLiquido = 0;
+
+// INSS
+
+if (salarioBruto > 0 && salarioBruto <= 1556.94) {
+    inssAliquota = salarioBruto * (8 / 100);
+    salarioBrutoJaReduzidoInss = salarioBruto - inssAliquota;
+} else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92) {
+    inssAliquota = salarioBruto * (9 / 100);
+    salarioBrutoJaReduzidoInss = salarioBruto - inssAliquota;
+} else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82) {
+    inssAliquota = salarioBruto * (11 / 100);
+    salarioBrutoJaReduzidoInss = salarioBruto - inssAliquota; 
+} else if (salarioBruto > 5189.82) {
+    inssAliquota = 570.88;
+    salarioBrutoJaReduzidoInss = salarioBruto - inssAliquota; 
+} else {
+    console.log("Salário inválido");
+}
+
+// IR
+
+if (salarioBrutoJaReduzidoInss <= 1903.98) {
+    salarioLiquido = salarioBrutoJaReduzidoInss;
+} else if (salarioBrutoJaReduzidoInss >= 1903.99 && salarioBrutoJaReduzidoInss <= 2826.65) {
+    parcela = 142.80;
+    impostoRendaAliquota = (salarioBrutoJaReduzidoInss * (7.5 / 100)) - parcela;
+    salarioLiquido = salarioBrutoJaReduzidoInss - impostoRendaAliquota;
+} else if (salarioBrutoJaReduzidoInss >= 2826.66 && salarioBrutoJaReduzidoInss <= 3751.05) {
+    parcela = 354.80;
+    impostoRendaAliquota = (salarioBrutoJaReduzidoInss * (15 / 100)) - parcela;
+    salarioLiquido = salarioBrutoJaReduzidoInss - impostoRendaAliquota;
+} else if (salarioBrutoJaReduzidoInss >= 3751.06 && salarioBrutoJaReduzidoInss <= 4664.68) {
+    parcela = 636.13;
+    impostoRendaAliquota = (salarioBrutoJaReduzidoInss * (22.5 / 100)) - parcela;
+    salarioLiquido = salarioBrutoJaReduzidoInss - impostoRendaAliquota;
+} else {
+    parcela = 869.36;
+    impostoRendaAliquota = (salarioBrutoJaReduzidoInss * (27.5 / 100)) - parcela;
+    salarioLiquido = salarioBrutoJaReduzidoInss - impostoRendaAliquota;
+}
+
+console.log("Salário Bruto: R$" + salarioBruto);
+console.log("Imposto INSS: R$ " + inssAliquota);
+console.log("Salário Bruto Reduzindo o imposto do INSS: R$ " + salarioBrutoJaReduzidoInss);
+console.log("Imposto de Renda: R$" + impostoRendaAliquota);
+console.log("Salário após os descontos de impostos (Salário Líquido): R$" + salarioLiquido);
