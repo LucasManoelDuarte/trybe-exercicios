@@ -12,3 +12,14 @@ for (let i = (fatorial - 1); i >= 1; i -= 1) {
 console.log(fatorial);
 
 
+// Exercício 02: Inverter uma palavra
+
+let word = "Banana";
+let reverseWord = "";
+
+for (let i = word.length - 1; i >= 0; i -= 1) {
+    reverseWord += word[i];
+}
+
+console.log(word);
+console.log(reverseWord);
