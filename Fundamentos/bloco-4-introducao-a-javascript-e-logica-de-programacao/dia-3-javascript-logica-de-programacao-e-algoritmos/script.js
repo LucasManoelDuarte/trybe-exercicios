@@ -23,3 +23,23 @@ for (let i = word.length - 1; i >= 0; i -= 1) {
 
 console.log(word);
 console.log(reverseWord);
+
+// Exercício 03: Retornar o maior e o menor valor dentro do array
+
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+let maior = array[0];
+let menor = array[0];
+
+for (let i = 0; i < array.length; i += 1) {
+    if (array[i].length > maior.length) {
+        maior = array[i];
+    }
+
+    if (array[i].length < menor.length) {
+        menor = array[i];
+    }
+}
+
+
+console.log(maior);
+console.log(menor);
