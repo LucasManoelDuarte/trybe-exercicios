@@ -84,8 +84,60 @@ for (let line = 0; line < valor; line += 1) {
       *****
 */
 
+let value = 5;
+let symbol = '*';
+let inputLine = '';
+let middle = (value + 1) / 2;
+let controlLeft = middle;
+let controlRight = middle;
 
+for (let line = 0; line <= middle; line += 1) {
+    for (let column = 0; column <= value; column += 1) {
+        if (column > controlLeft && column < controlRight) {
+            inputLine = inputLine + symbol;
+        } else {
+            inputLine = inputLine + ' ';
+        }
+    }
 
+    console.log(inputLine);
+    inputLine = '';
+    controlRight += 1;
+    controlLeft -= 1;
+}
+
+/*
+    Faça uma pirâmide com n asteriscos de base que seja vazia no meio. Assuma que o valor de n será sempre ímpar
+
+    Por último, façamos com que a variável seja incrementada com o valor correspondente a cada loop;
+    n = 7
+
+            *
+           * *
+          *   *
+         *******
+*/
+
+let n = 7;
+let middle = (n + 1) / 2;
+let controlLeft = middle;
+let controlRight = middle;
+let symbol = '*';
+
+for (let line = 1; line <= middle; line += 1) {
+  let outputLine = '';
+  for (let col = 1; col <= n; col += 1) {
+    if (col == controlLeft || col == controlRight || line == middle) {
+      outputLine += symbol;
+    } else {
+      outputLine += ' ';
+    }
+  }
+  
+  controlLeft -= 1;
+  controlRight += 1;
+  console.log(outputLine);
+}
 
 /*
     Faça um programa que diz se um número definido numa variável é primo ou não.
