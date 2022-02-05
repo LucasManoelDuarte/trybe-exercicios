@@ -41,5 +41,36 @@ for (let i = 0; i < array.length; i += 1) {
 }
 
 
-console.log(maior);
+console.log(maior)
 console.log(menor);
+
+// Exercício 04: O maior número primo entre 0 e 50
+
+let numerosPrimos = [];
+let contadorDeDivisoes = 0;
+let numeroMaior = 0;
+
+for (let i = 0; i <= 50; i += 1) {
+    contadorDeDivisoes = 0;
+
+    for (let j = 1; j <= i; j += 1) {
+        if (i % j === 0) {
+            contadorDeDivisoes += 1;
+        }
+    }
+
+    if (contadorDeDivisoes === 2) {
+        numerosPrimos.push(i);
+    }
+}
+
+for (let i = 0; i < numerosPrimos.length; i += 1) {
+    for (let j = 1; j < numerosPrimos.length; j += 1) {
+        if (numerosPrimos[j] > numerosPrimos[i]) {
+            maior = numerosPrimos[j];
+        }
+    }
+}
+
+console.log(numerosPrimos);
+console.log(maior);
