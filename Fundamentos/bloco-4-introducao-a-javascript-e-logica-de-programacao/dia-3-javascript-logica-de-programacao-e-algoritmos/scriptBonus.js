@@ -12,14 +12,14 @@
 
 let valor = 5;
 let symbol = '*';
-let inputLIne = '';
+let inputLine = '';
 
 for (let i = 1; i <= valor; i += 1) {
-    inputLIne += symbol;
+    inputLine += symbol;
 }
 
 for (let i = 1; i <= valor; i += 1) {
-    console.log(inputLIne);
+    console.log(inputLine);
 }
 
 /*
@@ -43,3 +43,33 @@ for (let i = 0; i <= valor; i += 1) {
     inputLine += symbol;
 }
 
+/*
+    Agora inverta o lado do triângulo. Por exemplo:
+
+    n = 5
+
+        *
+       **
+      ***
+     ****
+    *****
+*/
+
+let valor = 5;
+let symbol = '*';
+let inputLine = '';
+let inputPosition = valor;
+
+for (let line = 0; line < valor; line += 1) {
+    for (let column = 0; column <= valor; column += 1) {
+        if (column < inputPosition) {
+            inputLine = inputLine + ' ';
+        } else {
+            inputLine = inputLine + symbol;
+        }
+    }
+
+    console.log(inputLine);
+    inputLine = '';
+    inputPosition -= 1;
+};
