@@ -74,6 +74,18 @@ for (let line = 0; line < valor; line += 1) {
     inputPosition -= 1;
 };
 
+/*
+    Faça uma pirâmide com n asteriscos de base:
+
+    n = 5
+
+        *
+       ***
+      *****
+*/
+
+
+
 
 /*
     Faça um programa que diz se um número definido numa variável é primo ou não.
