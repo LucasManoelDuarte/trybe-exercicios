@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: dodgerblue;
+    color: whitesmoke;
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+img {
+    width: 250px;
+    border-radius: 25%;
+}
+
+.stamopoda-facts {
+    width: 600px;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.geral h3{
+    padding: 10px;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px;
+    background-color: dodgerblue;
+    color: whitesmoke;
+    text-align: left;
+}
+
+.link-to-video {
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 50px;
+    background-color: dodgerblue;
+    margin-top: 100px;
+    margin-left: 200px;
+    border-radius: 25%;
+}
+
+.references ul{
+    list-style: none;
+}
+
+.references a:hover {
+    color: dodgerblue;
+}
