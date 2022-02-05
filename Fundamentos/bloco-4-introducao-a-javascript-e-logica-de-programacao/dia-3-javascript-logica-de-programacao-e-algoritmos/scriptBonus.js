@@ -73,3 +73,23 @@ for (let line = 0; line < valor; line += 1) {
     inputLine = '';
     inputPosition -= 1;
 };
+
+
+/*
+    Faça um programa que diz se um número definido numa variável é primo ou não.
+*/
+
+let value = 47;
+let divNumber = 0;
+
+for (let i = 1; i <= value; i += 1) {
+    if (value % i === 0) {
+        divNumber += 1;
+    }
+}
+
+if (divNumber === 2) {
+    console.log(`${value} é um número primo`);
+} else {
+    console.log(`${value} não é um número primo`);
+};
