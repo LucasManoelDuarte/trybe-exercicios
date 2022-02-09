@@ -52,3 +52,14 @@ function paragraphToUpperCase() {
 }
 
 paragraphToUpperCase();
+
+// Exercícios 06
+function showAllContentOfParagraphs() {
+    let paragraphs = document.querySelectorAll('.center-content p');
+
+    for (let i = 0; i < paragraphs.length; i += 1) {
+        console.log(paragraphs[i].innerText);
+    }
+}
+
+showAllContentOfParagraphs();
