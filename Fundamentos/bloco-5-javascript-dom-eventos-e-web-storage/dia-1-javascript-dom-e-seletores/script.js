@@ -13,8 +13,8 @@
 
 // Exercício 01
 function changeTextOfParagraph() {
-    let paragraph = document.querySelector('.center-content p');
-    paragraph.innerText = 'Trabalhando como desenvolvedor, morando sozinho e codando muito!';
+    let paragraph = document.querySelectorAll('.center-content p');
+    paragraph[1].innerText = 'Trabalhando como desenvolvedor, morando sozinho e codando muito!';
 }
 
 changeTextOfParagraph();
@@ -37,3 +37,18 @@ function correctMistake() {
 }
 
 correctMistake();
+
+// Exercício 05
+function paragraphToUpperCase() {
+    let paragraphs = document.querySelectorAll('.center-content p');
+    let upperCase = '';
+    let paragraphUpperCase = '';
+
+    for (let i = 0; i < paragraphs.length; i += 1) {
+        upperCase = paragraphs[i].innerText;
+        paragraphUpperCase = upperCase.toUpperCase();
+        paragraphs[i].innerText = paragraphUpperCase;
+    }
+}
+
+paragraphToUpperCase();
