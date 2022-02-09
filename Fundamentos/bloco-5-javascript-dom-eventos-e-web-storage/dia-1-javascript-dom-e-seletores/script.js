@@ -10,3 +10,7 @@
     5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
     6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 */
+
+let paragraph = document.querySelector('.center-content p');
+paragraph.innerText = 'Trabalhando como desenvolvedor, morando sozinho e codando muito';
+
