@@ -28,5 +28,12 @@ function changeBackgroundColor(element, color) {
 changeBackgroundColor('.main-content', 'rgb(76, 164, 109)');
 
 // Exercício 03
-
 changeBackgroundColor('.center-content', 'white');
+
+// Exercício 04
+function correctMistake() {
+    let errorText = document.getElementsByClassName('title');
+    errorText[0].innerText = 'Exercícios 5.1 - JavaScript';
+}
+
+correctMistake();
