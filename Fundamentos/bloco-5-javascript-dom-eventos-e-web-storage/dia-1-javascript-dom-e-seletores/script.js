@@ -14,15 +14,19 @@
 // Exercício 01
 function changeTextOfParagraph() {
     let paragraph = document.querySelector('.center-content p');
-    paragraph.innerText = 'Trabalhando como desenvolvedor, morando sozinho e codando muito';
+    paragraph.innerText = 'Trabalhando como desenvolvedor, morando sozinho e codando muito!';
 }
 
 changeTextOfParagraph();
 
 // Exercício 02
-function changeBackgroundColor() {
-    let square = document.querySelector('.main-content');
-    square.style.backgroundColor = 'rgb(76, 164, 109)';
+function changeBackgroundColor(element, color) {
+    let square = document.querySelector(element);
+    square.style.backgroundColor = color;
 }
 
-changeBackgroundColor();
+changeBackgroundColor('.main-content', 'rgb(76, 164, 109)');
+
+// Exercício 03
+
+changeBackgroundColor('.center-content', 'white');
