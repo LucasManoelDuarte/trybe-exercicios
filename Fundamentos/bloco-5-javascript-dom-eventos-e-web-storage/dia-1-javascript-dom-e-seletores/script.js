@@ -11,6 +11,18 @@
     6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 */
 
-let paragraph = document.querySelector('.center-content p');
-paragraph.innerText = 'Trabalhando como desenvolvedor, morando sozinho e codando muito';
+// Exercício 01
+function changeTextOfParagraph() {
+    let paragraph = document.querySelector('.center-content p');
+    paragraph.innerText = 'Trabalhando como desenvolvedor, morando sozinho e codando muito';
+}
 
+changeTextOfParagraph();
+
+// Exercício 02
+function changeBackgroundColor() {
+    let square = document.querySelector('.main-content');
+    square.style.backgroundColor = 'rgb(76, 164, 109)';
+}
+
+changeBackgroundColor();
