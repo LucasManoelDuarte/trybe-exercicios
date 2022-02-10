@@ -115,3 +115,13 @@ sectionRight.style.margin = 'auto';
 
 //Exercício 14
 section.style.backgroundColor = 'green';
+
+//Exercício 15
+
+for (let i = list.childNodes.length - 1; i < list.childNodes.length; i -= 1) {
+    let currentChild = list.childNodes[i];
+
+    if (currentChild.innerText === 'Nove' || currentChild.innerText === 'Dez') {
+        currentChild.remove();
+    }
+}
