@@ -109,3 +109,6 @@ for (let i = 0; i < subtitles.length; i += 1) {
 
 //Exercício 12
 main.removeChild(sectionLeft);
+
+//Exercício 13
+sectionRight.style.margin = 'auto';
