@@ -112,3 +112,6 @@ main.removeChild(sectionLeft);
 
 //Exercício 13
 sectionRight.style.margin = 'auto';
+
+//Exercício 14
+section.style.backgroundColor = 'green';
