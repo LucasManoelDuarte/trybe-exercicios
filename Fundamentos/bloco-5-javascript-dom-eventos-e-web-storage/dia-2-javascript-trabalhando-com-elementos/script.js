@@ -48,3 +48,9 @@ let sectionLeft = document.createElement('section');
 sectionLeft.className = 'left-content';
 
 main.appendChild(sectionLeft);
+
+//Exercício 06
+let sectionRight = document.createElement('section');
+sectionRight.className = 'right-content';
+
+main.appendChild(sectionRight);
