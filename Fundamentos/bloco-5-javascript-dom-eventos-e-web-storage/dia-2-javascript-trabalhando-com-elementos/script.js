@@ -106,3 +106,6 @@ let subtitles = document.getElementsByTagName('h3');
 for (let i = 0; i < subtitles.length; i += 1) {
     subtitles[i].className = 'description';
 }
+
+//Exercício 12
+main.removeChild(sectionLeft);
