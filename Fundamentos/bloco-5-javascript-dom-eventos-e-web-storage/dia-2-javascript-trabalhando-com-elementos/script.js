@@ -61,3 +61,16 @@ image.src = 'https://picsum.photos/200';
 image.className = 'small-image';
 
 sectionLeft.appendChild(image);
+
+//Exercício 08
+let list = document.createElement('ul');
+
+let arrayNumberInFull = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+
+for (let i = 0; i < arrayNumberInFull.length; i += 1) {
+    let listItem = document.createElement('li');
+    listItem.innerText = arrayNumberInFull[i];
+    list.appendChild(listItem)
+}
+
+sectionRight.appendChild(list);
