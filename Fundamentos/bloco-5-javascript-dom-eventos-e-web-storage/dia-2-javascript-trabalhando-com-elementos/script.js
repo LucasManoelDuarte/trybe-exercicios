@@ -74,3 +74,9 @@ for (let i = 0; i < arrayNumberInFull.length; i += 1) {
 }
 
 sectionRight.appendChild(list);
+
+//Exercício 09
+for (let i = 1; i <= 3; i += 1) {
+    let subtitle = document.createElement('h3');
+    main.appendChild(subtitle);
+}
