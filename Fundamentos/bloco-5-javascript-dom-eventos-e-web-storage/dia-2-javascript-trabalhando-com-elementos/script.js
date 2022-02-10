@@ -19,3 +19,9 @@
 */
 
 // Exercício 01
+
+let title = document.createElement('h1');
+title.innerText = 'Exercício 5.2 - Javascript DOM';
+
+let body = document.getElementsByTagName('body');
+body[0].appendChild(title);
