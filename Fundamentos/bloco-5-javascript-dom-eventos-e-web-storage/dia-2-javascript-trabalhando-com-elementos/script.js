@@ -19,7 +19,6 @@
 */
 
 // Exercício 01
-
 let title = document.createElement('h1');
 title.innerText = 'Exercício 5.2 - Javascript DOM';
 
@@ -27,8 +26,13 @@ let body = document.getElementsByTagName('body');
 body[0].appendChild(title);
 
 // Exercício 02
-
 let main = document.createElement('main');
 main.className = 'main-content';
 
 body[0].appendChild(main);
+
+// Exercício 03
+let section = document.createElement('section');
+section.className = 'center-content';
+
+main.appendChild(section);
