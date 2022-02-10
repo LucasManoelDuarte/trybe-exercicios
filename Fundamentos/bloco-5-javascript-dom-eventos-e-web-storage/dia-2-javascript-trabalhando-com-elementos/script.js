@@ -42,3 +42,9 @@ let p = document.createElement('p');
 p.innerText = 'Algum texto';
 
 section.appendChild(p);
+
+//Exercício 05
+let sectionLeft = document.createElement('section');
+sectionLeft.className = 'left-content';
+
+main.appendChild(sectionLeft);
