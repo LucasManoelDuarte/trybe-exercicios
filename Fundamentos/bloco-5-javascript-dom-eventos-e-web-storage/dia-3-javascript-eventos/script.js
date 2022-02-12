@@ -160,3 +160,21 @@ for (let i = 0; i < listItems.length; i += 1) {
         listItems[i].style.fontSize = '20px';
     })
 }
+
+/*
+    Exercícios 07
+
+    Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
+
+     - O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
+*/
+let myTasks = document.querySelector('.my-tasks');
+let spanTask = document.createElement('span');
+
+function tasks(tarefa) {
+    spanTask.innerText = tarefa;
+
+    myTasks.appendChild(spanTask);
+}
+
+tasks('Cozinhar');
