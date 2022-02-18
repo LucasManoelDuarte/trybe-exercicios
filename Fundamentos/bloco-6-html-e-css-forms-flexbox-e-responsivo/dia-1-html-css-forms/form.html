@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/formStyle.css">
+    <title>TrybeTrip</title>
+</head>
+<body>
+    <header>
+        <h1>TrybeTrip</h1>
+    </header>
+
+    <main id="conteudo-principal">
+        <form action="" method="get">
+            <div class="formulario-linha">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" minlength="10" maxlength="40">
+            </div>
+
+            <div class="formulario-linha">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Digite o seu email" minlength="10" maxlength="50">
+            </div>
+
+            <div class="formulario-linha">
+                <fieldset>
+                    <legend>Destino Preferido: </legend>
+                    <input type="radio" name="destino" id="cidade">
+                    <label for="cidade">Cidade</label>
+
+                    <input type="radio" name="destino" id="campo">
+                    <label for="campo">Campo</label>
+
+                    <input type="radio" name="destino" id="praia">
+                    <label for="praia">Praia</label>
+
+                    <input type="radio" name="destino" id="montanhas">
+                    <label for="montanhas">Montanhas</label>
+                </fieldset>
+            </div>
+
+            <div class="formulario-linha">
+                <label for="resumo">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+                <textarea name="resumo" id="resumo" cols="30" rows="10" maxlength="500"></textarea>
+            </div>
+
+            <div class="formulario-linha">
+                <label for="data">Data: </label>
+                <input type="date" name="data" id="data">
+            </div>
+
+            <div class="formulario-linha">
+                <input type="checkbox" name="concordar" id="concordar">
+                <label for="concordar">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+            </div>
+
+            <div class="formulario-linha">
+                
+            </div>
+        </form>
+    </main>
+
+    <script src="/formScripts.js"></script>
+</body>
+</html>
