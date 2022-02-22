@@ -15,10 +15,10 @@
     </header>
 
     <main id="conteudo-principal">
-        <form action="" method="get">
+        <form action="#" id="form" autocomplete="off" method="get">
             <div class="container ">
                 <label class="form-label" for="nome">Nome: </label>
-                <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome" minlength="10" maxlength="40">
+                <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome">
             </div>
 
             <div class="container">
@@ -58,7 +58,7 @@
 
             <div class="container">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="concordar" id="concordar" value="concordo" required>
+                    <input class="form-check-input" type="checkbox" name="concordar" id="concordar" value="concordo">
                     <label class="form-check-label" for="concordar">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
                 </div>
             </div>
@@ -71,6 +71,7 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="/formScripts.js"></script>
 </body>
 </html>
