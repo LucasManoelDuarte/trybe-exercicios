@@ -1,0 +1,40 @@
+body {
+  background-color: crimson;
+  margin: 0;
+}
+
+.header-card {
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 15px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.header-card h1 {
+  text-align: center;
+}
+
+.content-card {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  background-color: aliceblue;
+  border-radius: 15px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.content-unique {
+  margin: 12px;
+}
+
+.footer-text {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0;
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 15px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+}
