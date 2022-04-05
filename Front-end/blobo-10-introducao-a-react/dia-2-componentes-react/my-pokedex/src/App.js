@@ -1,8 +1,10 @@
+import Pokedex from './Pokedex';
+
 function App() {
   return (
-    <div>
-      
-    </div>
+    <main>
+      <Pokedex />
+    </main>
   );
 }
 

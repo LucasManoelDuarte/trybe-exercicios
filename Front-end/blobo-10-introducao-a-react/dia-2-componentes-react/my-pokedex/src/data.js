@@ -18,7 +18,7 @@ const pokemons = [
           value: 8.5,
           measurementUnit: "kg"
       },
-      image: "https://cdn2.bulbagarden.net/upload/0/0a/Spr_5b_004.png",
+      image: "https://archives.bulbagarden.net/media/upload/0/0a/Spr_5b_004.png",
       moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Charmander_(Pok%C3%A9mon)"
   },
   {
